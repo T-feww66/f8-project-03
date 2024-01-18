@@ -12,3 +12,120 @@ body {
     /* font-family: "Open Sans", sans-serif; */
     font-size: 1.6rem;
 }
+:root {
+    --primary-color: #10375c;
+}
+
+/* common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    --height: 60px;
+    display: inline-block;
+    height: var(--height);
+    min-width: 205px;
+    color: #fff;
+    text-align: center;
+    line-height: var(--height);
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 22px;
+    border: 1px solid #2e80ce;
+    outline: none;
+    background: #2e80ce;
+}
+/* header */
+.header {
+    padding: 30px;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-flex;
+    gap: 0.6em;
+}
+
+.logo__text {
+    text-align: right;
+    color: #fff;
+    line-height: 1.4em;
+}
+
+.logo__brand {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar__list {
+    display: flex;
+    transition: all 0.5s ease;
+    gap: 0 42px;
+}
+
+
+.navbar__link,
+.action__login {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.navbar__item:hover .navbar__link,
+.navbar__item--active .navbar__link{
+    color: #fff;
+    text-shadow: 0.8px 0 0 currentColor;
+}
+
+.navbar__item--active::before {
+    content: "";
+    position: relative;
+    bottom: 3px;
+    left: -8px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* Actions */
+.action__login {
+    margin-right: 28px;
+}
+
+.action__signup {
+    --height: 44px;
+    min-width: 104px;
+    font-size: 1.6rem;
+    transition: all 0.25s ease-in;
+}
+
+.action__signup:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
