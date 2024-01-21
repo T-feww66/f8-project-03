@@ -427,10 +427,15 @@ a {
     margin-top: 70px;
 }
 
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+}
+
 .member-item__bg-img {
     padding-top: 28px;
     border-radius: 6px;
     background: #eaf6ff;
+    transition: all ease 0.25s;
 }
 
 .member-item__images {
@@ -461,27 +466,69 @@ a {
     line-height: 1.85;
 }
 
-.member__control {
+.section__control {
     text-align: center;
     margin-top: 38px;
 }
 
-.member__control--circle {
+.section__control--circle {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     background-color: #fff;
     border-radius: 36px;
-    color: #575F66;
+    color: #575f66;
     border: 1px solid #575f66;
 }
 
-.member__control--circle:hover {
+.section__control--circle:hover {
+    cursor: pointer;
     color: #fff;
-    border: 1px solid #2E80CE;
-    background-color: #2E80CE;
+    border: 1px solid #2e80ce;
+    background-color: #2e80ce;
 }
 
-.member__control--prev {
+.section__control--prev {
     margin-right: 18px;
+}
+
+/* install */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e80ce;
+    padding: 0px 70px;
+}
+
+.install_inner--img {
+    display: block;
+    margin-top: -95px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    margin-bottom: 18px;
+    max-width: 489px;
+}
+
+.install__row {
+    display: flex;
+    gap: 0px 28px;
+    margin-top: 38px;
 }
